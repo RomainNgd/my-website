@@ -1,5 +1,5 @@
-<template class="">
-  <nav class="bg-[#065f46] text-white py-4 relative flex items-center justify-between px-4 z-999">
+<template>
+  <nav class="bg-[#065f46] text-white py-4 relative flex items-center justify-center px-4 z-50">
     <!-- BurgerMenu visible uniquement en mobile -->
     <button @click="toggleMenu" class="md:hidden">
       <svg v-if="!isOpen" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
@@ -16,15 +16,53 @@
 
     <!-- Menu classique -->
     <ul
-      :class="[
+      :class="[ 
         'text-lg font-semibold gap-12',
-        isOpen ? 'flex flex-col absolute top-16 left-0 w-full bg-[#065f46] py-4 space-y-4 text-center md:static md:flex md:flex-row md:space-y-0' : 'hidden md:flex md:flex-row'
+        isOpen
+          ? 'flex flex-col absolute top-16 left-0 w-full bg-[#065f46] py-4 space-y-4 text-center md:static md:flex md:flex-row md:space-y-0 md:justify-center'
+          : 'hidden md:flex md:flex-row md:justify-center'
       ]"
     >
-      <li><RouterLink to="/" class="hover:underline" @click="closeMenu">Accueil</RouterLink></li>
-      <li><RouterLink to="/projects" class="hover:underline" @click="closeMenu">Projets</RouterLink></li>
-      <li><RouterLink to="/experience" class="hover:underline" @click="closeMenu">Parcours</RouterLink></li>
-      <li><RouterLink to="/contact" class="hover:underline" @click="closeMenu">Contact</RouterLink></li>
+      <li>
+        <RouterLink
+          to="/"
+          class="hover:underline"
+          active-class="underline"
+          @click="closeMenu"
+        >
+          Accueil
+        </RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          to="/projects"
+          class="hover:underline"
+          active-class="underline"
+          @click="closeMenu"
+        >
+          Projets
+        </RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          to="/experience"
+          class="hover:underline"
+          active-class="underline"
+          @click="closeMenu"
+        >
+          Parcours
+        </RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          to="/contact"
+          class="hover:underline"
+          active-class="underline"
+          @click="closeMenu"
+        >
+          Contact
+        </RouterLink>
+      </li>
     </ul>
   </nav>
 </template>
@@ -45,5 +83,5 @@ function closeMenu() {
 </script>
 
 <style scoped>
-/* Tu peux améliorer avec transition CSS si tu veux */
+/* Rien besoin ici pour l'instant, tout est géré avec Tailwind */
 </style>
