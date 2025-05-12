@@ -9,10 +9,10 @@
   
         <div class="space-y-6 text-lg">
           <div>
-            📞 <span class="font-semibold">+33 6 12 34 56 78</span>
+            📞 <span class="font-semibold">+33 7 81 49 69 49</span>
           </div>
         <div>
-            ✉️ <span class="font-semibold">romain.nigond@example.com</span>
+            ✉️ <span class="font-semibold">romain.nigond@gmail.com</span>
         </div>
         <div>
             💻 <a href="https://github.com/RomainNgd" target="_blank" class="text-[#4ade80] hover:underline">Mon GitHub</a>

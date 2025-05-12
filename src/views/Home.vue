@@ -31,7 +31,7 @@
 
         <!-- Compétences -->
         <div class="w-full md:w-1/2 text-center md:text-left">
-          <h2 class="text-3xl font-bold mb-8">Compétences Tehcniques</h2>
+          <h2 class="text-3xl font-bold mb-8">Compétences Techniques</h2>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-items-left">
             <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Symfony</span>
             <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Vue.js</span>
@@ -93,7 +93,7 @@
             J’adore apprendre, optimiser, et transformer des idées en solutions concrètes.
           </p>
           <ul class="text-gray-300 space-y-2 text-sm">
-            <li><strong>📍 Localisation :</strong> Lyon, France</li>
+            <li><strong>📍 Localisation :</strong> Lille, France</li>
             <li><strong>🎓 Formation :</strong> Bac+5 en conception et développement</li>
             <li><strong>🧠 Centres d'intérêt :</strong> UI/UX, architecture logicielle, IA générative</li>
           </ul>
