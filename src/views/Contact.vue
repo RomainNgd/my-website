@@ -1,3 +1,13 @@
+<script setup>
+  import { useHead } from '@vueuse/head'
+
+  useHead({
+    title: 'Contact - Romain Nigond',
+    meta: [
+      { name: 'description', content: 'Contactez-moi pour discuter d’un projet web ou d’une collaboration.' }
+    ]
+  })
+</script>
 <template>
     <div class="bg-[#0f0f0f] min-h-screen text-white">
       <!-- Section Contact -->
@@ -23,7 +33,4 @@
       </section>
     </div>
   </template>
-  
-  <script setup>
-  </script>
   

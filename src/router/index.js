@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 import Projects from '@/views/Projects.vue'
 import Contact from '@/views/Contact.vue'
 import Experience from '@/views/Experience.vue'
+import About from '@/views/About.vue'
 
 const routes = [
   { 
@@ -36,6 +37,16 @@ const routes = [
       ogImage: '/images/og-experience.png'
     }
   },
+    { 
+    path: '/about', 
+    name: 'A propos', 
+    component: About,
+    meta: { 
+      title: 'A propos | Romain Nigond',
+      description: 'Apprenez-en un peu plus sur moi',
+      ogImage: '/images/og-experience.png'
+    }
+  },
   { 
     path: '/contact', 
     name: 'Contact', 
@@ -46,6 +57,12 @@ const routes = [
       ogImage: '/images/og-contact.png'
     }
   },
+  {
+    path: '/legal',
+    name: 'MentionsLegales',
+    component: () => import('@/views/Legal.vue'),
+  }
+
 ]
 
 const router = createRouter({

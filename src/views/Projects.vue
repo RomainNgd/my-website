@@ -6,6 +6,14 @@
   import intranet from '@/assets/images/intranet.jpg'
   import livraison from '@/assets/images/livraison.webp'
   import { RouterLink } from 'vue-router'
+  import { useHead } from '@vueuse/head'
+
+  useHead({
+    title: 'Mes projets - Romain Nigond',
+    meta: [
+      { name: 'description', content: 'Découvrez les projets que j’ai réalisés en Vue.js, Symfony, Flutter, ReactNative, Wordpress etc.' }
+    ]
+  })
 </script>
 <template>
     <div class="bg-[#0f0f0f] min-h-screen text-white">
@@ -36,7 +44,7 @@
       image: livraison,
       techs: ['Symfony', 'MySql', 'VueJs', 'Docker'],
       link: '#',
-      context: 'En entreprise'
+      context: 'Entreprise'
     },
     {
       title: 'App web de support',
@@ -44,7 +52,7 @@
       image: support,
       techs: ['Symfony', 'VueJs', 'MariaDb', 'Docker'],
       link: '#',
-      context: "A l'école"
+      context: "Entreprise"
     },
     {
       title: 'Site vitrine',
@@ -52,7 +60,7 @@
       image: site,
       techs: ['Wordpress'],
       link: '#',
-      context: 'En entreprise'
+      context: 'Entreprise'
     },
     {
       title: 'Intranet',
@@ -60,7 +68,7 @@
       image: intranet,
       techs: ['Wordpress'],
       link: '#',
-      context: 'En entreprise'
+      context: 'Entreprise'
     },
     {
       title: 'App mobile blog/réseau Social',
@@ -68,7 +76,7 @@
       image: appSocial,
       techs: ['Symfony', 'Flutter', 'MariaDb', 'Docker'],
       link: '#',
-      context: "A l'école"
+      context: "Formation"
     },
     {
       title: 'App mobile de livraison',
@@ -76,7 +84,15 @@
       image: livraison,
       techs: ['React Native', 'Spring Boot', 'MongoDB', 'PostGres', 'Docker', 'K8s'],
       link: '#',
-      context: "A l'école"
+      context: "Formation"
+    },
+    { 
+      title: 'To do List Interractive',
+      description: 'Une application de To Do List partagé entre utilisateurs',
+      image: livraison,
+      techs: ['Symfont', 'Javascript', 'MySql'],
+      link: '#',
+      context: "Formation"
     },
   ]
   </script>

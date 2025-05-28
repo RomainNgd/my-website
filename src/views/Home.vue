@@ -1,77 +1,56 @@
 <script setup>
   import profilImg from '@/assets/images/profil.png'
+  import SkillsList from '@/components/SkillsList.vue'
+  import Hero from '@/components/Hero.vue'
   import computerRoom from '@/assets/images/computer.jpg'
-  import skills from '@/assets/images/skills.jpg'
+  import skills from '@/assets/images/skills.webp'
   import { RouterLink } from 'vue-router'
+  import { useHead } from '@vueuse/head'
+  useHead({
+    title: 'Romain Nigond - Développeur web/mobile',
+    meta: [
+      {
+        name: 'description',
+        content: 'Portfolio de Romain Nigond, développeur web/mobile.'
+      },
+      {
+        name: 'robots',
+        content: 'index, follow'
+      }
+    ]
+  })
+  const techSkills = [
+    'Symfony', 'Vue.js', 'Docker', 'Laravel',
+    'Spring Boot', 'React Native', 'Flutter', 'Twitter Bootstrap', 'K8s'
+  ]
+
+  const softSkills = [
+    'Photoshop', 'Illustrator', 'Gestion de projet',
+    'Agilité (SCRUM)', 'Canva', 'Jira', 
+  ]
 </script>
 
 <template>
   <div class="bg-[#0f0f0f] text-white">
     <!-- Hero -->
-    <section class="text-center py-24 px-7" data-aos="fade-up">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Romain Nigond</h1>
-      <p class="text-xl text-gray-300 mb-8">Ingénieur Développement passionné par le web, l’innovation et les technologies modernes.</p>
-      <div class="flex justify-center gap-6">
-        <a href="https://github.com/RomainNgd" target="_blank" class="bg-white text-[#065f46] font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition">Mon GitHub</a>
-        <RouterLink to="/contact" class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-[#065f46] transition">Me contacter</RouterLink>
-      </div>
-    </section>
-
-    <!-- Compétences Tech -->
-    <section class="py-20 px-6 bg-[#0f172a]" data-aos="fade-up">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-        <!-- Image -->
+     <Hero title="Romain Nigond"/>
+    <!-- Bloc compétences tech -->
+    <SkillsList :title="'Compétences Techniques'" :skills="techSkills">
+      <template #image>
         <div class="w-full md:w-1/2 flex justify-center">
-          <img
-            :src="computerRoom"
-            alt="dev"
-            class="max-w-sm w-full rounded-lg shadow-lg"
-          />
+          <img :src="computerRoom" alt="dev" class="max-w-sm w-full rounded-lg shadow-lg" />
         </div>
+      </template>
+    </SkillsList>
 
-        <!-- Compétences -->
-        <div class="w-full md:w-1/2 text-center md:text-left">
-          <h2 class="text-3xl font-bold mb-8">Compétences Techniques</h2>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-items-left">
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Symfony</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Vue.js</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Docker</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Laravel</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Spring Boot</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">React Native</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Flutter</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Twitter Bootstrap</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-        <!--Autres Compétences -->
-    <section class="py-20 px-6 bg-[#0f172a]" data-aos="fade-up">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-
-        <!-- Compétences -->
-        <div class="w-full md:w-1/2 text-center md:text-left">
-          <h2 class="text-3xl font-bold mb-8">Compétences supplémentaires</h2>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-items-left">
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Photoshop</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Illustrator</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Gestion de projet Agile</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Animation de réunion</span>
-            <span class="bg-[#065f46] text-white px-4 py-2 rounded-full">Canva</span>
-          </div>
-        </div>
-
-        <!-- Image -->
+    <!-- Bloc compétences autres -->
+    <SkillsList :title="'Compétences supplémentaires'" :skills="softSkills" :imageRight="true">
+      <template #image>
         <div class="w-full md:w-1/2 flex justify-center">
-          <img
-            :src="skills"
-            alt="dev"
-            class="max-w-sm w-full rounded-lg shadow-lg"
-          />
+          <img :src="skills" alt="dev" class="max-w-sm w-full rounded-lg shadow-lg" />
         </div>
-      </div>
-    </section>
+      </template>
+    </SkillsList>
 
 
     <!-- À propos (layout 2 colonnes) -->
@@ -98,21 +77,7 @@
             <li><strong>🧠 Centres d'intérêt :</strong> UI/UX, architecture logicielle, IA générative</li>
           </ul>
         </div>
-        <span class="text-center">Photo généré par IA</span>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#111827] text-gray-400 py-10 text-sm">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-6 text-center md:text-left">
-        <p>&copy; 2025 Romain Nigond. Tous droits réservés.</p>
-        <div class="flex gap-4">
-          <RouterLink to="/" class="hover:underline">Accueil</RouterLink>
-          <RouterLink to="/projects" class="hover:underline">Projets</RouterLink>
-          <RouterLink to="/contact" class="hover:underline">Contact</RouterLink>
-          <RouterLink to="/legal" class="hover:underline">Mentions légales</RouterLink>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>

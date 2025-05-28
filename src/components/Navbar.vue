@@ -55,6 +55,16 @@
       </li>
       <li>
         <RouterLink
+          to="/about"
+          class="hover:underline"
+          active-class="underline"
+          @click="closeMenu"
+        >
+          A propos
+        </RouterLink>
+      </li>
+      <li>
+        <RouterLink
           to="/contact"
           class="hover:underline"
           active-class="underline"

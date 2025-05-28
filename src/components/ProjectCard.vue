@@ -15,7 +15,6 @@
             {{ tech }}
           </span>
         </div>
-        <a :href="link" target="_blank" class="text-sm text-[#4ade80] hover:underline">Voir le projet →</a>
       </div>
     </div>
   </template>
