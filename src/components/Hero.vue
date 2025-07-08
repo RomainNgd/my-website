@@ -3,7 +3,7 @@ defineProps({
   title: String,
   description: {
     type: String,
-    default: "Ingénieur Développement passionné par le web, l'innovation et les technologies modernes."
+    default: "Je m'appelle Romain Nigond et je suis un développeur curieux et passionné par l'innovation numérique"
   }
 })
 </script>

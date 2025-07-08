@@ -4,10 +4,10 @@
       data-aos="fade-up"
     >
       <img :src="image" :alt="title" class="w-full h-48 object-cover" />
-      <div class="p-6">
-      <span class="inline-block mb-2 px-3 py-1 text-xs font-semibold bg-[#065f46] text-white rounded-full">
-        {{ context }}
-      </span>
+      <RouterLink :to="`/projects/${slug}`" class="block p-6 hover:underline">
+        <span class="inline-block mb-2 px-3 py-1 text-xs font-semibold bg-[#065f46] text-white rounded-full">
+          {{ context }}
+        </span>
         <h3 class="text-2xl font-bold mb-2">{{ title }}</h3>
         <p class="text-gray-300 text-sm mb-4">{{ description }}</p>
         <div class="flex flex-wrap gap-2 mb-4">
@@ -15,7 +15,7 @@
             {{ tech }}
           </span>
         </div>
-      </div>
+      </RouterLink>
     </div>
   </template>
   
@@ -26,7 +26,8 @@
     image: String,
     techs: Array,
     link: String,
-    context: String 
+    context: String,
+    slug: String
   })
   </script>
   

@@ -26,33 +26,34 @@
       <hr class="border-[#10b981] border-t-2 w-16 mb-6 mx-auto md:mx-0">
 
       <p class="mb-5 leading-relaxed">
-        🎓 En alternance dans une PME, je suis développeur polyvalent : backend, un peu de graphisme et gestion de projet quand il le faut.
-        En formation, j’ai commencé 100% dev, aujourd’hui je m’oriente progressivement vers le <strong>management de projet digital</strong>.
+        🎓 Actuellement en alternance au sein d'une PME, j’occupe un poste de développeur polyvalent, intervenant sur le backend, la gestion de projet, ainsi que sur certains aspects graphiques lorsque nécessaire.  
+        Mon parcours a débuté avec une formation exclusivement orientée développement, et s’oriente aujourd’hui progressivement vers le <strong>management de projet digital</strong>.
       </p>
 
       <p class="mb-5 leading-relaxed">
-        💡 J’ai découvert le développement au lycée, un peu par logique : passionné par l’univers du PC, bon en maths, curieux de comprendre comment les choses fonctionnent… C’était une évidence !
+        💡 J’ai découvert le développement au lycée, naturellement : passionné par l’univers informatique, à l’aise avec les mathématiques et animé par une forte curiosité technique. Le code est rapidement devenu une évidence.
       </p>
 
       <p class="mb-5 leading-relaxed">
-        🔧 Ce que je préfère ? Travailler sur des <strong>APIs bien pensées</strong>, optimiser la logique backend pour gagner en performance, et réfléchir à l’<strong>expérience utilisateur</strong> plus qu’au design pur.
+        🔧 Ce que j’apprécie particulièrement : concevoir des <strong>API bien structurées</strong>, optimiser les performances côté backend, et m’attacher à l’<strong>expérience utilisateur</strong> plus qu’à l’esthétique seule.
       </p>
 
       <p class="mb-5 leading-relaxed">
-        🧠 On dit de moi que je suis passionné, curieux, rigoureux — parfois (souvent) exigeant — mais toujours avec la volonté de bien faire et de faire avancer les projets.
+        🧠 On me décrit souvent comme passionné, rigoureux et curieux — parfois exigeant — mais toujours investi avec le souci de bien faire et de faire avancer les projets.
       </p>
 
       <p class="mb-5 leading-relaxed">
-        👥 J’adore bosser en équipe : ça booste les idées et ouvre des perspectives. Mais je sais aussi me concentrer à fond dans ma bulle quand la technique le demande.
+        👥 Le travail en équipe me stimule : il favorise l’émergence d’idées nouvelles et une vision plus large. Je sais également faire preuve d’autonomie et de concentration lorsqu’un travail de fond le requiert.
       </p>
 
       <p class="mb-5 leading-relaxed">
-        🥁 Fun fact : je joue des percussions depuis l’âge de 8 ans. 10 ans de solfège, concerts, harmonies, commémorations… Jusqu’à recevoir la médaille d’honneur de l’UNC ( Union Nationnal des Combatant) pour mon engagement musical associatif.
+        🥁 Fait marquant : je pratique les percussions depuis l’âge de 8 ans. Dix années de solfège, concerts, harmonies et cérémonies m’ont conduit à recevoir la médaille d’honneur de l’UNC (Union Nationale des Combattants) pour mon engagement musical associatif.
       </p>
 
       <p class="leading-relaxed italic text-[#94a3b8]">
-        En bref : que ce soit en ligne de commande ou à la baguette, je donne toujours le meilleur de moi-même.
+        En résumé : que ce soit derrière un terminal ou une baguette, je m’investis pleinement dans ce que j’entreprends.
       </p>
+
     </div>
   </div>
 </section>

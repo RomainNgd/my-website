@@ -33,7 +33,7 @@
 <template>
   <div class="bg-[#0f0f0f] text-white">
     <!-- Hero -->
-     <Hero title="Romain Nigond"/>
+    <Hero title="Concepteur Dévellopeur d'Application"/>
     <!-- Bloc compétences tech -->
     <SkillsList :title="'Compétences Techniques'" :skills="techSkills">
       <template #image>
@@ -79,5 +79,21 @@
         </div>
       </div>
     </section>
+        <!-- Bloc Rencontrons-nous -->
+    <section class="py-20 px-6 bg-[#0f0f0f] border-t border-gray-700 text-center" data-aos="fade-up">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Rencontrons-nous !</h2>
+        <p class="text-gray-400 text-lg mb-8">
+          Un projet, une idée, ou simplement envie d’échanger ? Je suis toujours ouvert aux nouvelles opportunités.
+        </p>
+        <RouterLink
+          to="/contact"
+          class="inline-block bg-white text-black font-semibold py-3 px-6 rounded-full hover:bg-gray-200 transition"
+        >
+          Me contacter
+        </RouterLink>
+      </div>
+    </section>
+
   </div>
 </template>

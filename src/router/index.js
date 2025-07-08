@@ -5,6 +5,7 @@ import Projects from '@/views/Projects.vue'
 import Contact from '@/views/Contact.vue'
 import Experience from '@/views/Experience.vue'
 import About from '@/views/About.vue'
+import ProjectDetails from '@/views/ProjectDetails.vue'
 
 const routes = [
   { 
@@ -37,7 +38,7 @@ const routes = [
       ogImage: '/images/og-experience.png'
     }
   },
-    { 
+  { 
     path: '/about', 
     name: 'A propos', 
     component: About,
@@ -56,6 +57,11 @@ const routes = [
       description: 'Envie de me contacter ? Retrouvez ici toutes les infos pour me joindre.',
       ogImage: '/images/og-contact.png'
     }
+  },
+  {
+    path: '/projects/:slug',
+    name: 'ProjectDetails',
+    component: ProjectDetails
   },
   {
     path: '/legal',
